@@ -1,16 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import MissionForm from './MissionForm';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Mission 4
-        </p>
-      </header>
+      <div className='TextBox'>
+        <h1>Mission 4</h1>
+        <MissionForm/>
+      </div>
+      <p>by: Alyssa Barret and Ranju Raveendran </p>
     </div>
   );
 }
