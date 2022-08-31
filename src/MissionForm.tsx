@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import StringCleaner from "./StringCleaner";
+import * as StrCleaner from "./StringCleaner.js";
 import './MissionForm.css';
 
 function MissionForm() {
@@ -12,7 +12,10 @@ function MissionForm() {
   };
 
   const handleClick = () => {
-    setFormatted(StringCleaner(message));
+    console.log("test");
+    console.log(StrCleaner.StringCleaner(message));
+    setFormatted(StrCleaner.StringCleaner("hello"));
+
     setMessage('');
   };
 
